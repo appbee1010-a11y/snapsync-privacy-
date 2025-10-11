@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap Sync Privacy Policy</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1, h2, h3 { color: #1a2b40; }
+        h1 { border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        strong { font-weight: bold; }
+        .key-declaration { background-color: #f7f9fc; border-left: 5px solid #4a90e2; padding: 15px; margin: 15px 0; }
+    </style>
+</head>
+<body>
+
+<h1>Snap Sync Privacy Policy</h1>
+
+<p><strong>Effective Date:</strong> [2025-10-10]</p>
+
+<p>This Privacy Policy aims to help you understand how we collect, use, protect, and handle user data, particularly data accessed via Google accounts and your device's camera. The core philosophy of Snap Sync is **Data Minimalism**: we only collect the minimum amount of data necessary to deliver our service.</p>
+
+<p>The Snap Sync application is provided by [Publisher Name] (referred to as "we," "us," or "our").</p>
+
+<h2>1. Information We Collect and Process</h2>
+
+<p>Snap Sync is a "bridge" application whose primary function is to recognize handwritten schedules and synchronize them to the user's Google Calendar.</p>
+
+<h3>A. Information Collected via Google Authentication (Google Sign-In)</h3>
+<p>To facilitate the calendar synchronization feature, we require you to sign in using your Google account. Through Firebase Authentication, we collect the following information during this process:</p>
+<ul>
+    <li><strong>Google Account Basic Information:</strong> This includes your name (for display within the app), email address (for user identification), and profile picture (optional).</li>
+    <li><strong>Google Calendar Access Scope:</strong> We request and access your <strong>Google Calendar</strong> permission (`calendar.events` scope). This permission is strictly used for **creating and modifying your calendar events**.</li>
+</ul>
+
+<h3>B. Application Functionality Data (Non-Persistent Data)</h3>
+<p>Snap Sync processes the following temporary data while providing the service:</p>
+<ul>
+    <li><strong>Camera Access:</strong> We request access to your device's camera or photo gallery so you can capture or upload photos of your handwritten schedule.</li>
+    <li><strong>Image Content:</strong> The photo you upload or capture is sent in real-time as input to the <strong>Google Gemini API</strong> for text recognition and schedule analysis.</li>
+    <li><strong>Analysis Results:</strong> The recognized text and structured schedule data returned by the Gemini API.</li>
+</ul>
+
+<h2>2. Data Usage and Storage</h2>
+
+<h3>A. Purpose of Data Use</h3>
+<p>All data we collect and process is used strictly for the following purposes:</p>
+<ol>
+    <li><strong>Authentication:</strong> To confirm your Google account identity and manage your application session.</li>
+    <li><strong>Core Feature Execution:</strong> To convert your image content into structured scheduling data.</li>
+    <li><strong>Calendar Synchronization:</strong> To utilize your Google Calendar access permission to create the recognized schedule events in your calendar.</li>
+</ol>
+
+<h3>B. Data Storage and Persistence (Key Declaration)</h3>
+<div class="key-declaration">
+    <strong>Snap Sync does not permanently store any user data on our servers.</strong>
+    <ul>
+        <li><strong>Image and Analysis Results:</strong> Your uploaded photos and the resulting recognized text data are <strong>processed temporarily</strong>. As soon as the schedule synchronization operation is complete, this data is immediately cleared from the application's memory and is <strong>never uploaded, stored, or backed up to our servers or any third-party storage service.</strong></li>
+        <li><strong>User Account Information:</strong> The basic Google account information collected via Firebase Authentication (such as User ID and Email) is used solely to validate the session's authenticity.</li>
+    </ul>
+</div>
+
+<h2>3. Third-Party Services</h2>
+<p>For its core functionality, Snap Sync relies on the following third-party services:</p>
+<ul>
+    <li><strong>Google Gemini API:</strong> Used for handwritten text recognition within images. Content sent to the Gemini API is subject to Google's privacy terms.</li>
+    <li><strong>Google Firebase Authentication:</strong> Used for secure Google account sign-in and identity verification.</li>
+    <li><strong>Google Calendar API:</strong> Used to create events in the user's Google Calendar.</li>
+</ul>
+
+<h2>4. Data Security</h2>
+<p>We take reasonable precautions to protect the security of your data:</p>
+<ul>
+    <li><strong>No Sensitive Data Storage:</strong> Because we do not store photos and analysis results on our servers, we significantly minimize the risk of data breaches.</li>
+    <li><strong>Encrypted Transmission:</strong> All communications with Google services (Gemini API, Calendar API) are encrypted using <strong>HTTPS/TLS</strong>.</li>
+    <li><strong>Minimal Permissions:</strong> We only request the minimum Google Calendar permissions (`calendar.events`) necessary to execute the application's function.</li>
+</ul>
+
+<h2>5. Policy Updates</h2>
+<p>We may update this Privacy Policy from time to time. Any changes will be posted on this page. We encourage you to review this Privacy Policy periodically for any changes.</p>
+
+<h2>6. Contact Us</h2>
+<p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+<p><strong>Application Publisher:</strong> SnapSync-appbee</p>
+<p><strong>Contact Email:</strong> appbee1010@gmail.com</p>
+
+</body>
+</html>
